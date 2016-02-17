@@ -99,7 +99,7 @@ class Result:
                                         end_column)
 
         return cls(origin=origin,
-                   message=message,
+                   message=message.strip(),
                    affected_code=(range,),
                    severity=severity,
                    debug_msg=debug_msg,
